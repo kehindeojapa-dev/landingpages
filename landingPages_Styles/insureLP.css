@@ -1,0 +1,313 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before,*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --color1: hsl(256, 26%, 20%);
+    --color2: hsl(216, 30%, 68%);
+    --color3: hsl(270, 9%, 17%);
+    --color4: hsl(273, 4%, 51%);
+    --color5: hsl(0, 0%, 98%);
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1,h2,h3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+/* Style for the navbar ------------------------------------------------------------------------------------------------- */
+
+.navbar1 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 1em;
+    padding-bottom: 0.7em; 
+    z-index: 5;
+    position: relative;
+}
+.navbar1 ul {
+    margin-top: 0em;
+}
+.navbar1 li {
+    display: inline-block;
+    margin-left: 2em;
+}
+.navbar1 li a {
+    color: var(--color4);
+    font-size: 0.9em;
+}
+.navbar1 li a:hover {
+    color: var(--color1);
+}
+
+.navbar1 li .view {
+    border: 2px solid var(--color1);
+    padding: 0.5em 1.5em;
+    color: var(--color1);
+    margin-left: 1em;
+}
+.navbar1 li .view:hover {
+    border: transparent;
+    background-color: var(--color1);
+    color: var(--color5);
+}
+
+/* Style for the header banner ------------------------------------------------------------------------------------------*/
+
+.banner {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    background-color: var(--color1);
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 580px;
+}
+
+.banner hr {
+    border: 1px solid var(--color4);
+    width: 25%;
+    position: relative;
+    top: 4.7em;
+    right: 12.5em;
+}
+.banner-left h1 {
+    margin-top: 2em;
+    color: var(--color5);
+    font-size: 4em;
+}
+
+
+.banner-left p {
+    color: var(--color5);
+    padding-right: 1em;
+    font-size: 0.9em;
+    line-height: 1.4em;
+    margin-top: -1.5em;
+    font-weight: thin;
+}
+
+.banner-left a {
+    display: inline-block;
+    border: 2px solid var(--color5);
+    padding: 0.5em 2em;
+    color: var(--color5);
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    margin-top: 0.8em;
+}
+.banner-left a:hover {
+    border: transparent;
+    background-color: var(--color5);
+    color: var(--color1);
+}
+
+.banner-right img {
+    display: inline-block;
+    margin-top: 5em;
+}
+.bg-intro-right {
+    z-index: 100;
+    display: block;
+    position: relative;
+    top: -51em;
+    left: 11em;
+    right: 2em;
+    height: 72vh;
+    width: 510px;
+}
+.bg-intro-left {
+    display: block;
+    z-index: 100;
+    position: relative;
+    top: -60em;
+    right: 42.5em;
+    height: 50vh;
+}
+/* Style for the different section ----------------------------------------------------------------------------------------*/
+
+.different {
+    /* outline: 1px solid lightgreen; */
+    margin-top: 15em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+.different hr {
+    border: 1px solid var(--color4);
+    width: 10%;
+    position: relative;
+    top: 1em;
+    right: 30.2em;
+}
+.different h1 {
+    font-size: 4em;
+}
+
+
+.diff-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.5em;
+}
+
+.diff-container img {
+    width: 20%;
+}
+.diff-container h2 {
+    color: var(--color3);
+}
+
+.diff-container p {
+    color: var(--color4);
+    line-height: 1.5em;
+}
+
+
+/* Style for the how we work section------------------------------------------------------------------------------------------- */
+
+.find {
+    width: 80%;
+    margin-top: 6em;
+    margin-left: auto;
+    margin-right: auto;
+    height: 13em;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background-color: var(--color1);
+    z-index: -1;
+}
+
+.find h3 {
+    font-size: 3em;
+    color: var(--color5);
+    padding-left: 1.4em;
+}
+
+.find a {
+    display: inline-block;
+    margin-top: 5em;
+    border: 2px solid var(--color5);
+    padding: 0.5em 1.5em;
+    margin-left: 5em;
+    color: var(--color5);
+}
+.find a:hover {
+    border: transparent;
+    background-color: var(--color5);
+    color: var(--color1);
+}
+
+/* .find .bg-intro-work {
+    object-position: center top;
+    position: relative;
+    top: -8em;
+    height: 10em;
+    width: 10em;
+    left: 10em;
+    z-index: 1;
+} */
+
+/* Style for the footer navbar --------------------------------------------------------------------------------------------------- */
+
+footer {
+    background-color: var(--color5);
+    margin-top: 8em;
+}
+
+.navbar2 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 4em;
+}
+.navbar2 ul {
+    margin-top: -0em;
+    margin-left: 22em;
+}
+.navbar2 li {
+    display: inline-block;
+    text-align: left;
+    margin-left: 0.5em;
+}
+.navbar2 li a.facebook img:hover {
+    content: url("../images/insurelp/icon-facebook - hover.svg");
+}
+.navbar2 li a.twitter img:hover {
+    content: url("../images/insurelp/icon-twitter - hover.svg");
+}
+.navbar2 li a.pinterest img:hover {
+    content: url("../images/insurelp/icon-pinterest - hover.svg");
+}
+.navbar2 li a.instagram img:hover {
+    content: url("../images/insurelp/icon-instagram - hover.svg");
+}
+
+
+footer hr{
+    border: 1px solid hsla(276, 4%, 51%, 0.2);
+    width: 80%;
+}
+
+.navlinks {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.navlinks ul {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+.navlinks li {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.navlinks li a {
+    color: var(--color1);
+    font-size: 0.75em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.navlinks li a:hover {
+    text-decoration: underline;
+}
+
+.navlinks ul li:first-child {
+    margin-bottom: 1.5em;
+}
+.navlinks ul li:first-child a {
+    color: var(--color4);
+}
+

@@ -1,0 +1,395 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* 
+    ==========================
+          Gloal Values
+    ==========================
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: candara;
+}
+
+:root {
+    --color1:hsl(171, 66%, 44%);
+    --color2: hsl(233, 100%, 69%);
+    --color3: hsl(210, 10%, 33%);
+    --color4: hsl(201, 11%, 66%);
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 
+    ==========================
+          MAiN LoGo
+    ==========================
+*/
+
+.bg-header {
+    height: 15em;
+    width: 100%;
+}
+.main {
+    text-align: center;
+}
+.main-logo {
+    position: relative;
+    top: -10em;
+    width: 8%;
+}
+
+
+
+/* 
+    ==========================
+          Header Section
+    ==========================
+*/
+
+header {
+    text-align: center;
+    margin-top: -9em;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header h1 {
+    color: var(--color3);
+}
+header p {
+    color: var(--color4);
+    margin-top: -1em;
+    font-size: 0.9em;
+    line-height: 1.3em;
+    margin-bottom: 3.5em;
+}
+
+header a {
+    color: #fff;
+    border: transparent;
+    padding: 0.7em 2em;
+    margin-left: 0.5em;
+    border-radius: 30px;
+}
+header a.ios {
+    background-color: var(--color1);
+    border-bottom: 2px solid hsl(171, 58%, 36%);
+}
+header a.ios:hover {
+    box-shadow: 0px 5px 2px 1px rgb(207, 255, 248);
+}
+
+header a.mac {
+    background-color: var(--color2);
+    border-bottom: 2px solid hsl(233, 58%, 36%) 
+}
+header a.mac:hover {
+    box-shadow: 0px 5px 2px 1px hsl(231, 82%, 94%);
+}
+
+/* 
+    ==========================
+          Snippet Section
+    ==========================
+*/
+
+.snippet {
+    margin-top: 7em;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.snippet h2 {
+    color: var(--color3);
+}
+.snippet p {
+    color: var(--color4);
+    font-size: 0.6em;
+    margin-top: -0.4em;
+    line-height: 1.3em;
+    margin-bottom: 4em;
+}
+
+/* 
+    ==========================
+          Features Section
+    ==========================
+*/
+
+.features {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.feature-img {
+    /* outline: 1px solid slateblue; */
+}
+
+.feature-img img {
+    width: 105%;
+    height: 450px;
+    position: relative;
+    right: 1.7em;
+}
+
+.feature-list {
+    padding: 2.2em 8em 0 5em;
+}
+.feature-list h3 {
+    color: var(--color3);
+}
+.feature-list p {
+    color: var(--color4);
+    font-size: 0.8em;
+}
+
+/* 
+    ==========================
+          Access Section
+    ==========================
+*/
+
+.access {
+    margin-top: 5em;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.access h2 {
+    color: var(--color3);
+    text-align: center;
+}
+.access p {
+    margin-top: -0.5em;
+    color: var(--color4);
+    font-size: 0.75em;
+    text-align: center;
+    line-height: 1.8em;
+    margin-bottom: 5em;
+}
+.access img {
+    width: 140%;
+    position: relative;
+    right: 5.5em;
+}
+
+/* 
+    ==========================
+          Supercharge Section
+    ==========================
+*/
+
+.supercharge {
+    margin-top: 5em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.supercharge h2 {
+    text-align: center;
+    color: var(--color3);
+    font-size: 1.6em;
+}
+.supercharge p {
+    margin-top: -0.6em;
+    text-align: center;
+    color: var(--color4);
+    font-size: 0.9em;
+}
+
+.feature2 {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2em;
+}
+.feature2 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+.feature2 img.blacklist {
+    margin-bottom: 1.5em;
+}
+.feature2 h3 {
+    color: var(--color3);
+    text-align: center;
+    margin-bottom: 1.3em;
+}
+.feature2 p {
+    line-height: 1.5em;
+}
+
+/* 
+    ==========================
+        Clients Section
+    ==========================
+*/
+
+.clients {
+    margin-top: 6em;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.clients > img{
+    height: 3%;
+}
+
+/* 
+    ==========================
+          Store Section
+    ==========================
+*/
+
+
+.store {
+    text-align: center;
+    margin-top: 6em;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.store h1 {
+    color: var(--color3);
+}
+.store p {
+    color: var(--color4);
+    margin-top: -1em;
+    font-size: 0.9em;
+    line-height: 1.3em;
+    margin-bottom: 3.5em;
+}
+
+.store a {
+    color: #fff;
+    border: transparent;
+    padding: 0.7em 2em;
+    margin-left: 0.5em;
+    border-radius: 30px;
+}
+
+.store a.ios {
+    background-color: var(--color1);
+    border-bottom: 2px solid hsl(171, 58%, 36%);
+}
+.store a.ios:hover {
+    box-shadow: 0px 5px 2px 1px rgb(207, 255, 248);
+}
+
+.store a.mac {
+    background-color: var(--color2);
+    border-bottom: 2px solid hsl(233, 58%, 36%) 
+}
+.store a.mac:hover {
+    box-shadow: 0px 5px 2px 1px hsl(231, 82%, 94%);
+}
+
+
+/* 
+    ==========================
+          Footer Section
+    ==========================
+*/
+
+footer {
+    margin-top: 5em;
+    background-color: hsla(202, 11%, 66%, 0.1);
+}
+
+.footer-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2em;
+    /* height: 70px; */
+}
+
+.footer-container > div:nth-child(1){
+    width: 20%;
+    /* outline: 1px solid slateblue; */
+}
+.footer-container > div:nth-child(1) img{
+    display: block;
+    width: 20%;
+    /* margin-left: auto; */
+    margin-right: auto;
+    /* margin-top: 20%; */
+}
+
+.footer-container > div:nth-child(2){
+    width: 60%;
+    margin-left: -5em;
+    /* outline: 1px solid salmon; */
+}
+
+.footer-container > div:nth-child(2) ul{
+    display: inline-block;
+    /* outline: 1px solid #000; */
+    margin-right: 2em;
+    margin-top: -0em;
+}
+.footer-container > div:nth-child(2) li{
+    margin-bottom: 1em;
+}
+.footer-container > div:nth-child(2) > ul:nth-child(3){
+    position: relative;
+    bottom: 2.3em;
+}
+
+.footer-container > div:nth-child(2) li a{
+    color: var(--color3);
+    font-size: 1.05em;
+}
+.footer-container > div:nth-child(2) li a:hover {
+    color: var(--color1);
+}
+
+
+.footer-container > div:nth-child(3){
+    width: 20%;
+}
+
+.footer-container > div:nth-child(3) ul li{
+    position: relative;
+    left: 2.2em;
+}
+
+.footer-container > div:nth-child(3) li{
+    display: inline-block;
+    margin-left: 1em;
+}
+.footer-container > div:nth-child(3) li a.facebook:hover {
+    content: url("../images/clipoard/icon-facebook-hover.svg");
+}
+.footer-container > div:nth-child(3) li a.twitter:hover {
+    content: url("../images/clipoard/icon-twitter-hover.svg");
+}
+.footer-container > div:nth-child(3) li a.instagram:hover {
+    content: url("../images/clipoard/icon-instagram-hover.svg");
+}

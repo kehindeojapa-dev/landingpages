@@ -1,0 +1,567 @@
+html {
+    box-sizing: inherit;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* 
+    =============================================================================================================
+                GLOBAL VALUES
+    =============================================================================================================
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+:root {
+    --softBlue: hsl(231, 69%, 60%);
+    --softRed: hsl(0, 94%, 66%);
+    --grayishBlue: hsl(229, 8%, 60%);
+    --veryDarkBlue: hsl(229, 31%, 21%);
+}
+
+/* 
+    =============================================================================================================
+                TOP NAVIGATION SECTION
+    =============================================================================================================
+*/
+
+.top-navbar {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+    padding-top: 1.5em;
+    /* outline: 1px solid slateblue; */
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.top-navbar ul {
+    margin-top: 0em;
+    margin-left: auto;
+}
+.top-navbar ul li {
+    display: inline-block;
+    margin-left: 3em;
+}
+.top-navbar ul li a {
+    color: var(--veryDarkBlue);
+}
+.top-navbar ul li a:hover {
+    color: var(--softRed);
+}
+
+.top-navbar ul li a.login {
+    border: 1.5px solid var(--softRed);
+    padding: 0.4em 1.5em;
+    border-radius: 5px;
+    color: #fff;
+    background-color: var(--softRed);
+}
+.top-navbar ul li a.login:hover {
+    background-color: #fff;
+    color: var(--softRed);
+}
+
+/* 
+    =============================================================================================================
+                HEADER SECTION
+    =============================================================================================================
+*/
+
+.main {
+    /* outline: 1px solid slateblue; */
+    width: 80%;
+    margin-top: 3em;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* overflow: hidden; */
+}
+
+.main-left h1{
+    font-size: 2.5em;
+    margin-top: 1.7em;
+    color: var(--veryDarkBlue);
+}
+
+.main-left p {
+    font-size: 0.9em;
+    color: var(--grayishBlue);
+    width: 82%;
+}
+
+.main-left a {
+    display: inline-block;
+    padding: 0.8em 0.9em;
+    margin-right: 0.7em;
+    font-size: 0.85em;
+    border-radius: 5px;
+    font-weight: 550;
+}
+.main-left a.chrome-button {
+    color: #fff;
+    background-color: var(--softBlue);
+}
+.main-left a.chrome-button:hover {
+    color: var(--softBlue);
+    background-color: #fff;
+    border: 1px solid var(--softBlue);
+}
+
+.main-left a.firefox-button {
+    color: var(--veryDarkBlue);
+    background-color: hsl(229, 8%, 90%);
+    box-shadow: 0px 6px 3px 0px #d7d7e2;
+}
+.main-left a.firefox-button:hover {
+    box-shadow: none;
+    background-color: #fff;
+    color: var(--veryDarkBlue);
+    border: 1px solid var(--veryDarkBlue);
+}
+
+.main-right {
+    position: relative;
+    z-index: 1;
+}
+
+.main-right::after {
+    content: '';
+    position: absolute;
+    top: 10.2rem;
+    left: 10rem;
+    background: var(--softBlue);
+    border-bottom-left-radius: 30%;
+    height: 65%;
+    width: 95%;
+    /* overflow: hidden; */
+    z-index: -10;
+}
+
+/* 
+    =============================================================================================================
+                FEATURE_INTRO SECTION
+    =============================================================================================================
+*/
+
+.feature-intro {
+    /* outline: 1px solid slateblue; */
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    text-align: center;
+}
+
+.feature-intro h2 {
+    color: var(--veryDarkBlue);
+}
+
+.feature-intro p {
+    font-size: 0.9em;
+    color: var(--grayishBlue);
+    margin-bottom: 4em;
+}
+
+/* 
+    =============================================================================================================
+                MAIN FEATURE SECTION
+    =============================================================================================================
+*/
+
+.main-feature {
+    /* outline: 1px solid salmon; */
+}
+
+.main-feature h4 {
+    color: var(--veryDarkBlue);
+    text-align: center;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    margin-bottom: 3em;
+}
+
+/* 
+    =============================================================================================================
+                SIMPLE FEATURE SECTION
+    =============================================================================================================
+*/
+
+.simple {
+    /* outline: 1px solid slateblue; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+}
+
+.simple-right { 
+    /* outline: 1px solid saddlebrown; */
+    padding-top: 8%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.simple-right h3 {
+    font-size: 1.4em;
+    color: var(--veryDarkBlue);
+} 
+
+.simple-right p {
+    color: var(--grayishBlue);
+    font-size: 0.9em;
+    margin-bottom: 2em;
+}
+
+.info-btn{
+    display: inline-block;
+    color: #fff;
+    padding: 0.8em 0.9em;
+    background-color: var(--softBlue);
+    border-radius: 5px;
+}
+
+.simple-left {
+    position: relative;
+    z-index: 1;
+}
+
+.simple-left img {
+    display: block;
+    margin-left: auto;
+}
+
+.simple-left::after {
+    content: '';
+    position: absolute;
+    top: 5rem;
+    right: 6rem;
+    background: var(--softBlue);
+    border-bottom-right-radius: 30%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -10;
+}
+
+/* 
+    =============================================================================================================
+                SPEEDY FEATURE SECTION
+    =============================================================================================================
+*/
+.speed {
+    margin-top: 8em;
+}
+.speedy {
+    /* outline: 1px solid slateblue; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+}
+
+.speedy-left {
+    padding: 8% 20% 0 20%;
+}
+
+.speedy-left h3 {
+    font-size: 1.4em;
+    color: var(--veryDarkBlue);
+}
+
+.speedy-left p {
+    color: var(--grayishBlue);
+    font-size: 0.9em;
+    margin-bottom: 2em;
+}
+
+.speedy-right {
+    position: relative;
+    z-index: 1;
+}
+
+.speedy-right::after {
+    content: '';
+    position: absolute;
+    top: 5rem;
+    left: 3rem;
+    background: var(--softBlue);
+    border-bottom-left-radius: 30%;
+    height: 85%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -10;
+}
+
+/* 
+    =============================================================================================================
+                SHARING FEATURE SECTION
+    =============================================================================================================
+*/
+
+.easy {
+    margin-top: 5em;
+}
+
+.sharing {
+    outline: 1px solid slateblue;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.sharing-right {
+    padding: 8% 20% 0 20%;
+}
+.sharing-right h3 {
+    font-size: 1.4em;
+    color: var(--veryDarkBlue);
+}
+.sharing-right p {
+    font-size: 0.9em;
+    color: var(--grayishBlue);
+    margin-bottom: 2em;
+}
+
+.sharing-left {
+    position: relative;
+    z-index: 1;
+}
+.sharing-left img {
+    display: block;
+    margin-left: auto;
+}
+.sharing-left::after {
+    content: '';
+    position: absolute;
+    top: 5rem;
+    right: 4rem;
+    background: var(--softBlue);
+    border-bottom-right-radius: 30%;
+    border-top-right-radius: 30%;
+    height: 90%;
+    width: 100%;
+    z-index: -10;
+}
+
+/* 
+    =============================================================================================================
+                DOWNLOAD SECTION
+    =============================================================================================================
+*/
+
+.download {
+    margin-top: 8em;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.download h1 {
+    color: var(--veryDarkBlue);
+    text-align: center;
+}
+.download p {
+    color: var(--grayishBlue);
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+    font-size: 0.9em;
+}
+
+.browsers {
+    /* outline: 1px solid green; */
+    margin: 3em auto 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    column-gap: 1em;
+}
+
+.browser-item {
+    /* outline: 1px solid slateblue; */
+    box-shadow: 0px 4px 3px 1px #e2e2ec;
+}
+
+.firefox {
+    position: relative;
+    top: 2.5em;
+}
+.opera {
+    position: relative;
+    top: 5em;
+}
+.browser-item img.browser-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+
+.browser-item img.dots {
+    display: block;
+    margin: 1em 0 1em 0;
+    width: 50%;
+}
+
+.browser-item h4, .browser-item p {
+    text-align: center;
+}
+.browser-item h4 {
+    color: var(--veryDarkBlue);
+}
+
+.browser-item p {
+    color: var(--grayishBlue);
+    font-size: 0.75em;
+    margin-top: -1.5em;
+}
+
+.browser-item a {
+    /* outline: 1px solid saddlebrown; */
+    font-size: 0.8em;
+    display: inline-block;
+    margin: 0 1.3em 2em;
+    padding: 1em;
+    color: #fff;
+    background-color: var(--softBlue);
+    border-radius: 5px;
+}
+.browser-item a:hover {
+    color: var(--softBlue);
+    background-color: #fff;
+    border: 2px solid var(--softBlue);
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+}
+
+/* 
+    =============================================================================================================
+                JOIN US SECTION
+    =============================================================================================================
+*/
+
+.join {
+    margin-top: 13em;
+    /* outline: 1px solid slateblue; */
+    background-color: var(--softBlue);
+    color: #fff;
+    text-align: center;
+}
+
+.join h6 {
+    padding-top: 4em;
+    /* font-weight: 400; */
+    letter-spacing: 0.3em;
+}
+.join h2 {
+    width: 25%;
+    margin: 0 auto 1em auto;
+    font-weight: 600;
+}
+
+form {
+    margin-bottom: 2em;
+}
+form input {
+    height: 40px;
+    width: 17%;
+    margin-bottom: 4em;
+    padding-left: 1em;
+    outline: none;
+    border: transparent;
+    border-radius: 4px;
+}
+form input:focus {
+    border: 2px solid var(--softRed);
+}
+form button {
+    padding: 1em 1em;
+    border-radius: 4px;
+    border: transparent;
+    color: #fff;
+    background-color: var(--softRed);
+}
+form button:hover {
+    color: var(--softRed);
+    background-color: #fff;
+    border: 2px solid var(--softRed);
+}
+/* 
+    =============================================================================================================
+                FOOTER SECTION
+    =============================================================================================================
+*/
+
+footer {
+    /* outline: 1px solid gold; */
+    margin-top: -2em;
+    background-color: var(--veryDarkBlue);
+}
+
+.footer-navigation {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-logo {
+    width: 20%;
+    /* outline: 1px solid gold; */
+    padding-top: 1em;
+}
+.footer-navlinks {
+    /* outline: 1px solid gold; */
+    width: 60%;
+}
+.footer-navlinks ul {
+    /* outline: 1px solid green; */
+    margin-left: -1em;
+}
+.footer-navlinks ul li {
+    display: inline-block;
+    margin-right: 2em;
+}
+.footer-navlinks ul li a {
+    color: #fff;
+    font-size: 0.75em;
+    letter-spacing: 0.1em;
+}
+.footer-navlinks ul li a:hover {
+    color: var(--softRed);
+}
+
+
+.footer-social {
+    width: 20%;
+}
+.footer-social li {
+    display: inline-block;
+    margin-right: 2em;
+    /* outline: 1px solid lightpink; */
+    position: relative;
+    left: 4.8em;
+}
+
+.footer-social li a.facebook:hover {
+    content: url("../images/bookmark/icon-facebook - hover.svg");
+}
+.footer-social li a.twitter:hover {
+    content: url("../images/bookmark/icon-twitter - hover.svg");
+}
+

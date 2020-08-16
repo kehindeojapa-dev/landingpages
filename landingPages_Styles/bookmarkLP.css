@@ -2,7 +2,9 @@ html {
     box-sizing: inherit;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
@@ -55,13 +57,16 @@ li {
     margin-top: 0em;
     margin-left: auto;
 }
+
 .top-navbar ul li {
     display: inline-block;
     margin-left: 3em;
 }
+
 .top-navbar ul li a {
     color: var(--veryDarkBlue);
 }
+
 .top-navbar ul li a:hover {
     color: var(--softRed);
 }
@@ -73,6 +78,7 @@ li {
     color: #fff;
     background-color: var(--softRed);
 }
+
 .top-navbar ul li a.login:hover {
     background-color: #fff;
     color: var(--softRed);
@@ -95,7 +101,7 @@ li {
     /* overflow: hidden; */
 }
 
-.main-left h1{
+.main-left h1 {
     font-size: 2.5em;
     margin-top: 1.7em;
     color: var(--veryDarkBlue);
@@ -115,10 +121,12 @@ li {
     border-radius: 5px;
     font-weight: 550;
 }
+
 .main-left a.chrome-button {
     color: #fff;
     background-color: var(--softBlue);
 }
+
 .main-left a.chrome-button:hover {
     color: var(--softBlue);
     background-color: #fff;
@@ -130,6 +138,7 @@ li {
     background-color: hsl(229, 8%, 90%);
     box-shadow: 0px 6px 3px 0px #d7d7e2;
 }
+
 .main-left a.firefox-button:hover {
     box-shadow: none;
     background-color: #fff;
@@ -211,16 +220,17 @@ li {
     overflow: hidden;
 }
 
-.simple-right { 
+.simple-right {
     /* outline: 1px solid saddlebrown; */
     padding-top: 8%;
     padding-left: 20%;
     padding-right: 20%;
 }
+
 .simple-right h3 {
     font-size: 1.4em;
     color: var(--veryDarkBlue);
-} 
+}
 
 .simple-right p {
     color: var(--grayishBlue);
@@ -228,7 +238,7 @@ li {
     margin-bottom: 2em;
 }
 
-.info-btn{
+.info-btn {
     display: inline-block;
     color: #fff;
     padding: 0.8em 0.9em;
@@ -267,6 +277,7 @@ li {
 .speed {
     margin-top: 8em;
 }
+
 .speedy {
     /* outline: 1px solid slateblue; */
     display: grid;
@@ -318,7 +329,7 @@ li {
 }
 
 .sharing {
-    outline: 1px solid slateblue;
+    /* outline: 1px solid slateblue; */
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -326,10 +337,12 @@ li {
 .sharing-right {
     padding: 8% 20% 0 20%;
 }
+
 .sharing-right h3 {
     font-size: 1.4em;
     color: var(--veryDarkBlue);
 }
+
 .sharing-right p {
     font-size: 0.9em;
     color: var(--grayishBlue);
@@ -340,10 +353,12 @@ li {
     position: relative;
     z-index: 1;
 }
+
 .sharing-left img {
     display: block;
     margin-left: auto;
 }
+
 .sharing-left::after {
     content: '';
     position: absolute;
@@ -374,6 +389,7 @@ li {
     color: var(--veryDarkBlue);
     text-align: center;
 }
+
 .download p {
     color: var(--grayishBlue);
     text-align: center;
@@ -400,10 +416,12 @@ li {
     position: relative;
     top: 2.5em;
 }
+
 .opera {
     position: relative;
     top: 5em;
 }
+
 .browser-item img.browser-image {
     display: block;
     margin-left: auto;
@@ -417,9 +435,11 @@ li {
     width: 50%;
 }
 
-.browser-item h4, .browser-item p {
+.browser-item h4,
+.browser-item p {
     text-align: center;
 }
+
 .browser-item h4 {
     color: var(--veryDarkBlue);
 }
@@ -440,6 +460,7 @@ li {
     background-color: var(--softBlue);
     border-radius: 5px;
 }
+
 .browser-item a:hover {
     color: var(--softBlue);
     background-color: #fff;
@@ -467,6 +488,7 @@ li {
     /* font-weight: 400; */
     letter-spacing: 0.3em;
 }
+
 .join h2 {
     width: 25%;
     margin: 0 auto 1em auto;
@@ -476,6 +498,7 @@ li {
 form {
     margin-bottom: 2em;
 }
+
 form input {
     height: 40px;
     width: 17%;
@@ -485,9 +508,11 @@ form input {
     border: transparent;
     border-radius: 4px;
 }
+
 form input:focus {
     border: 2px solid var(--softRed);
 }
+
 form button {
     padding: 1em 1em;
     border-radius: 4px;
@@ -495,11 +520,13 @@ form button {
     color: #fff;
     background-color: var(--softRed);
 }
+
 form button:hover {
     color: var(--softRed);
     background-color: #fff;
     border: 2px solid var(--softRed);
 }
+
 /* 
     =============================================================================================================
                 FOOTER SECTION
@@ -525,23 +552,28 @@ footer {
     /* outline: 1px solid gold; */
     padding-top: 1em;
 }
+
 .footer-navlinks {
     /* outline: 1px solid gold; */
     width: 60%;
 }
+
 .footer-navlinks ul {
     /* outline: 1px solid green; */
     margin-left: -1em;
 }
+
 .footer-navlinks ul li {
     display: inline-block;
     margin-right: 2em;
 }
+
 .footer-navlinks ul li a {
     color: #fff;
     font-size: 0.75em;
     letter-spacing: 0.1em;
 }
+
 .footer-navlinks ul li a:hover {
     color: var(--softRed);
 }
@@ -550,6 +582,7 @@ footer {
 .footer-social {
     width: 20%;
 }
+
 .footer-social li {
     display: inline-block;
     margin-right: 2em;
@@ -561,7 +594,7 @@ footer {
 .footer-social li a.facebook:hover {
     content: url("../images/bookmark/icon-facebook - hover.svg");
 }
+
 .footer-social li a.twitter:hover {
     content: url("../images/bookmark/icon-twitter - hover.svg");
 }
-

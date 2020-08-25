@@ -1,0 +1,684 @@
+/*  =========================================================================================  *\
+    MEDIA QUERIES
+\*  =========================================================================================  */
+
+    /* 
+    ===================================================
+          MAX WIDTH: 360PX(SMALL SCREENS)
+    ===================================================
+    */
+
+@media (max-width: 600px) {
+    body {
+        /* background-color: green; */
+        overflow-x: hidden;
+        width: 100%;
+    }
+    /* 
+    ==========================
+          MAiN LoGo
+    ==========================
+    */
+
+    .main-logo {
+        position: relative;
+        top: -11em;
+        width: 25%;
+    }
+    /* 
+    ==========================
+          Header Section
+    ==========================
+*/
+
+    header {
+        text-align: center;
+        margin-top: -10em;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    header h1 {
+        font-size: 1.6em;
+    }
+    header p {
+        margin-top: -0.5em;
+        font-size: 0.9em;
+        font-weight: 300;
+        margin-bottom: 2.8em;
+    }
+
+    header a {
+        padding: 0.5em 2em;
+        margin-left: 0.5em;
+        display: inline-block;
+        margin-bottom: 1em;
+    }
+
+    /* 
+    ==========================
+          Snippet Section
+    ==========================
+    */
+
+    .snippet {
+        margin-top: 5em;
+        width: 85%;
+    }
+    .snippet h2 {
+        font-size: 1.3em;
+    }
+    .snippet p {
+        font-size: 0.65em;
+        font-weight: 300;
+    }
+
+    /* 
+    ==========================
+          Features Section
+    ==========================
+    */
+
+    .features {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .feature-img {
+        /* outline: 1px solid slateblue; */
+        text-align: center;
+    }
+    .feature-img img {
+        width: 80%;
+        height: auto;
+        position: relative;
+        right: 0em;
+    }
+
+    .feature-list {
+        margin-top: 1em;
+        padding: 0;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .feature-list h3 {
+        text-align: center;
+        font-size: 1.1em;
+    }
+    .feature-list p {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -0.8em;
+        font-size: 0.8em;
+        font-weight: 300;
+        text-align: center;
+    }
+    /* 
+    ==========================
+          Access Section
+    ==========================
+    */
+
+    .access {
+        width: 80%;
+    }
+
+    .access h2 {
+        font-size: 1.3em;
+    }
+    .access p {
+        margin-top: -0.5em;
+        font-size: 0.7em;
+        line-height: 1.5em;
+        margin-bottom: 3.5em;
+    }
+    .access img {
+        width: 100%;
+        position: relative;
+        right: auto;
+    }
+
+    /* 
+    ==========================
+          Supercharge Section
+    ==========================
+    */
+
+    .supercharge {
+        margin-top: 4em;
+        width: 90%;
+    }
+
+    .supercharge h2 {
+        text-align: center;
+        color: var(--color3);
+        font-size: 1.3em;
+    }
+    .supercharge p {
+        margin-top: -0.6em;
+        text-align: center;
+        color: var(--color4);
+        font-size: 0.8em;
+    }
+
+    .feature2 {
+        margin-top: 3em;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 2em;
+    }
+    .feature2 img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2em;
+    }
+    .feature2 img.blacklist {
+        margin-bottom: 2em;
+    }
+
+    /* 
+        ==========================
+            Clients Section
+        ==========================
+    */
+
+    .clients {
+        margin-top: 5em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .clients > img {
+        display: block;
+        margin: 0 auto;
+        height: 3%;
+        width: 60%;
+        margin-bottom: 3em;
+    }
+
+    /* 
+    ==========================
+          Store Section
+    ==========================
+    */
+
+    .store {
+        text-align: center;
+        margin-top: 5em;
+        width: 90%;
+    }
+
+    .store h1 {
+        font-size: 1.3em;
+    }
+    .store p {
+        margin-top: -0.7em;
+        font-size: 0.8em;
+        font-weight: 300;
+        line-height: 1.3em;
+        margin-bottom: 2.7em;
+    }
+
+    .store a {
+        display: inline-block;
+        margin-bottom: 1em;
+        padding: 0.5em 2em;
+    }
+
+    
+/* 
+    ==========================
+          Footer Section
+    ==========================
+    */
+
+    footer {
+        margin-top: 5em;
+        background-color: hsla(202, 11%, 66%, 0.1);
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 2em;
+    }
+
+    .footer-container > div:nth-child(1){
+        width: 100%;
+    }
+    .footer-container > div:nth-child(1) img{
+        display: block;
+        width: 20%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-container > div:nth-child(2){
+        width: 100%;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        /* outline: 1px solid salmon; */
+    }
+
+    .footer-container > div:nth-child(2) ul{
+        display: inline-block;
+        /* outline: 1px solid #000; */
+        margin-top: 2em;
+    }
+    .footer-container > div:nth-child(2) ul:nth-child(2){
+        /* outline: 1px solid pink; */
+        margin-top: -1em;
+    }
+    .footer-container > div:nth-child(2) li{
+        margin-bottom: 1em;
+    }
+    .footer-container > div:nth-child(2) > ul:nth-child(3){
+        /* outline: 1px solid salmon; */
+        position: relative;
+        bottom: 3em;
+    }
+
+    .footer-container > div:nth-child(3){
+        width: 100%;
+        margin-top: -4em;
+    }
+    .footer-container > div:nth-child(3) ul {
+        /* outline: 1px solid salmon; */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+    }
+    .footer-container > div:nth-child(3) ul li{
+        position: static;
+        /* outline: 1px solid salmon; */
+        display: inline-flex;
+        margin-left: 0.8em;
+    }
+
+}
+
+/* 
+===========================================================
+    MIN-WIDTH: 401PX == MAX WIDTH: 600PX (MID-SMARTPHONES)
+===========================================================
+*/
+@media (min-width: 401px) and (max-width: 600px){
+    
+    /* 
+    ==========================
+          Footer Section
+    ==========================
+    */
+
+    .footer-container > div:nth-child(3) ul {
+        /* outline: 1px solid blue; */
+        width: 75%;
+        padding-left: 20%;
+    }
+    .footer-container > div:nth-child(3) ul li{
+        margin-right: 0.8em;
+    }
+}
+
+/* 
+======================================================================
+    MIN-WIDTH: 601PX == MAX WIDTH: 824PX (BIG-SMARTPHONES=MID-TABLET)
+======================================================================
+*/
+
+@media (min-width: 601px) and (max-width: 824px) {
+    body {
+        /* background-color: red; */
+        width: 100%;
+    }
+     /* 
+    ==========================
+          MAiN LoGo
+    ==========================
+    */
+
+    .main-logo {
+        position: relative;
+        top: -11em;
+        width: 15%;
+    }
+    /* 
+    ==========================
+          Header Section
+    ==========================
+    */
+
+    header {
+        text-align: center;
+        margin-top: -10em;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    header h1 {
+        font-size: 1.7em;
+    }
+    header p {
+        margin-top: -0.5em;
+        font-size: 1em;
+        font-weight: 300;
+        margin-bottom: 2.8em;
+    }
+
+    header a {
+        padding: 0.5em 2em;
+        margin-left: 0.5em;
+        display: inline-block;
+        margin-bottom: 1em;
+    }
+    /* 
+    ==========================
+          Snippet Section
+    ==========================
+    */
+
+    .snippet {
+        margin-top: 5em;
+        width: 65%;
+    }
+    .snippet h2 {
+        font-size: 1.5em;
+    }
+    .snippet p {
+        font-size: 0.75em;
+        font-weight: 300;
+    }
+
+    /* 
+    ==========================
+          Features Section
+    ==========================
+    */
+
+    .feature-list {
+        padding: 1em 4em 1em 3em;
+    }
+    .feature-list h3 {
+        font-size: 1.3em;
+    }
+    .feature-list p {
+        font-size: 0.9em;
+    }
+    /* 
+    ==========================
+          Access Section
+    ==========================
+    */
+
+    .access {
+        width: 80%;
+    }
+
+    .access h2 {
+        font-size: 1.4em;
+    }
+    .access p {
+        margin-top: -0.5em;
+        font-size: 0.9em;
+        line-height: 1.5em;
+        margin-bottom: 3.5em;
+    }
+    .access img {
+        width: 100%;
+        position: relative;
+        right: auto;
+    }
+    /* 
+    ==========================
+        Clients Section
+    ==========================
+    */
+
+    .clients {
+        margin-top: 5em;
+    }
+
+    .clients > img {
+        height: 3%;
+        width: 15%;
+        margin-bottom: 3em;
+    }
+    /* 
+    ==========================
+          Store Section
+    ==========================
+    */
+
+    .store {
+        text-align: center;
+        margin-top: 4em;
+        width: 90%;
+    }
+
+    .store h1 {
+        font-size: 1.5em;
+    }
+    .store p {
+        margin-top: -0.7em;
+        font-size: 0.9em;
+        font-weight: 300;
+        line-height: 1.3em;
+        margin-bottom: 2.7em;
+    }
+
+    .store a {
+        display: inline-block;
+        margin-bottom: 1em;
+        padding: 0.5em 2em;
+    }
+    /* 
+    ==========================
+          Footer Section
+    ==========================
+    */
+
+    footer {
+        margin-top: 5em;
+        background-color: hsla(202, 11%, 66%, 0.1);
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 2em;
+    }
+
+    .footer-container > div:nth-child(1){
+        width: 100%;
+    }
+    .footer-container > div:nth-child(1) img{
+        display: block;
+        width: 15%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-container > div:nth-child(2){
+        width: 100%;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        /* outline: 1px solid salmon; */
+    }
+
+    .footer-container > div:nth-child(2) ul{
+        display: inline-block;
+        /* outline: 1px solid #000; */
+        margin-top: 2em;
+    }
+    .footer-container > div:nth-child(2) ul:nth-child(2){
+        /* outline: 1px solid pink; */
+        margin-top: -1em;
+    }
+    .footer-container > div:nth-child(2) li{
+        margin-bottom: 1em;
+    }
+    .footer-container > div:nth-child(2) > ul:nth-child(3){
+        /* outline: 1px solid salmon; */
+        position: relative;
+        bottom: 3em;
+    }
+
+    .footer-container > div:nth-child(3){
+        width: 100%;
+        margin-top: -4em;
+    }
+    .footer-container > div:nth-child(3) ul {
+        /* outline: 1px solid salmon; */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3em;
+        width: 75%;
+        padding-left: 20%;
+    }
+    .footer-container > div:nth-child(3) ul li{
+        position: static;
+        /* outline: 1px solid salmon; */
+        display: inline-flex;
+        margin-right: 0.8em;
+    }
+    @media (min-width: 601px) and (max-width: 661px) {
+        .footer-container > div:nth-child(3) ul {
+            margin-top: 0em;
+        }
+    }
+    @media (min-width: 662px) and (max-width: 824px) {
+        .footer-container > div:nth-child(2) > ul:nth-child(3){
+            /* outline: 1px solid salmon; */
+            position: relative;
+            bottom: 2.2em;
+        }
+    }
+}
+/* 
+======================================================================
+    MIN-WIDTH: 825PX == MAX WIDTH: 110PX (BIG-TABLET-SMALL DESKTOP)
+======================================================================
+*/
+@media (min-width: 825px) and (max-width: 1100px) {
+    body {
+        /* background-color: pink; */
+        width: 100%;
+    }
+    /* 
+    ==========================
+          Header Section
+    ==========================
+    */
+
+    header {
+        text-align: center;
+        margin-top: -10em;
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    header a {
+        padding: 0.5em 2em;
+        margin-left: 0.5em;
+        display: inline-block;
+        margin-bottom: 1em;
+    }
+
+    /* 
+    ==========================
+          Access Section
+    ==========================
+    */
+    .access h2 {
+        font-size: 1.7em;
+    }
+    .access p {
+        margin-top: -0.5em;
+        color: var(--color4);
+        font-size: 0.9em;
+        text-align: center;
+        line-height: 1.8em;
+        margin-bottom: 5em;
+    }
+
+     /* 
+    ==========================
+        Clients Section
+    ==========================
+    */
+
+    .clients {
+        margin-top: 6em;
+    }
+
+    .clients > img {
+        height: 3%;
+        width: 15%;
+        margin-bottom: 3em;
+    }
+
+    /* 
+    ==========================
+          Store Section
+    ==========================
+    */
+
+    .store {
+        width: 54%;
+    }
+    /* 
+    ==========================
+          Footer Section
+    ==========================
+    */
+
+    .footer-container > div:nth-child(2) ul{
+        display: inline-block;
+        /* outline: 1px solid #000; */
+        margin-right: 1.5em;
+    }
+    .footer-container > div:nth-child(2) > ul:nth-child(3){
+        position: relative;
+        left: 18em;
+        bottom: 5.5em;
+    }
+    .footer-container > div:nth-child(3) li{
+        display: inline-block;
+        margin-left: 0.2em;
+    }
+    @media (min-width: 1047px) and (max-width: 1100px) {
+        .footer-container > div:nth-child(2) > ul:nth-child(3){
+            position: relative;
+            bottom: 2.15em;
+            left: 0;
+        }
+        .footer-container > div:nth-child(3) li{
+            display: inline-block;
+            margin-left: 0.8em;
+        }
+    }
+}
+@media (min-width: 1101px) and (max-width: 6000px) {
+    body {
+        /* background-color: yellow; */
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-x: hidden;
+    }
+    .features {
+        overflow-x: hidden;
+    }
+}

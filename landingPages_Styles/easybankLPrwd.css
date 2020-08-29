@@ -1,0 +1,777 @@
+/*  =========================================================================================  *\
+    MEDIA QUERIES
+\*  =========================================================================================  */
+
+
+
+
+
+/*                                                                          \*
+            ===================================================
+                    MAX WIDTH: 600PX(SMALL SCREENS)
+            ===================================================
+\*                                                                          */
+
+@media (max-width: 600px) {
+    body {
+        /* background-color: green; */
+        width: 100%;
+    }
+    /* 
+    ====================================================================================
+            TOP-NAVBAR SECTION
+    ====================================================================================
+    */
+    .top-navbar {
+        display: none;
+    }
+    /* 
+    ====================================================================================
+                BANNER SECTION
+    ====================================================================================
+    */
+
+    .banner {
+        /* outline: 1px solid slateblue; */
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    .banner-left {
+        /* outline: 1px solid salmon; */
+        width: 90%;
+        margin-top: -31em;
+        margin-left: auto;
+        margin-right: auto;
+        /* outline: 1px solid salmon; */
+        padding-top: 0em;
+        order: 1;
+        max-height: 50vh;
+    }
+
+    .banner-left h1 {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .banner-left p {
+        text-align: center;
+        font-weight: 200;
+        width: 90%;
+        margin-top: -0.7em;
+        margin-bottom: 2.8em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .banner-left a {
+        /* outline: 1px solid salmon; */
+        display: inline-block;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .banner-right {
+        /* outline: 1px solid saddlebrown; */
+        overflow: hidden;
+        order: 0;
+        z-index: 2;
+    }
+
+    .banner-right img {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        top: -6.3em;
+        z-index: 3;
+    }
+
+    .banner-right::after {
+        content: url("../images/easybank/bg-intro-mobile.svg");
+        /* outline: 1px solid salmon; */
+        position: relative;
+        left: -0.5em;
+        top: -26.5em;
+        z-index: 1;
+        /* overflow: hidden; */
+    }
+    /* 
+    ====================================================================================
+            FEATURES SECTION
+    ====================================================================================
+    */
+    .choose {
+        margin-top: -7.4em;
+    }
+    .feature-intro {
+        /* outline: 1px solid gold; */
+        width: 85%;
+        padding-top: 2em;
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .feature-intro h1 {
+        font-weight: 300;
+        font-size: 1.7em;
+    }
+    
+    .feature-intro p {
+        width: 100%;
+        font-size: 0.9em;
+        margin-top: -0.7em;
+        margin-bottom: 3em;
+    }
+    .features {
+        /* outline: 1px solid purple; */
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        row-gap: 1em;
+        grid-template-columns: 100%;
+        padding-bottom: 4em;
+        text-align: center;
+        padding-bottom: 2.5em;
+    }
+    .features img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .features h2 {
+        font-weight: 300;
+        font-size: 1.3em;
+    }
+
+    .features p {
+        font-size: 1em;
+        font-weight: 300;
+        margin-top: -0.3em;
+    }
+    /* 
+    ====================================================================================
+                ARTICLE SECTION
+    ====================================================================================
+    */
+
+    .article h1 {
+        padding-left: 0;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+    .articles-box {
+        /* outline: 1px solid salmon; */
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        /* grid-template-columns: repeat(4, 25%); */
+        grid-template-columns: 1fr;
+        row-gap: 1.3em;
+        padding-bottom: 4.5em;
+    }
+    /* 
+    ====================================================================================
+                FOOTER SECTION
+    ====================================================================================
+    */
+
+    .footer-container {
+        /* outline: 1px solid gold; */
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .footer-container .social img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .footer-container .social ul {
+        margin-top: 1.5em;
+        /* outline: 1px solid snow; */
+        margin-left: 0;
+    }
+    
+    .footer-container .social ul li {
+        display: inline-block;
+        /* margin-right: 0.3em; */
+        margin-right: 0.7em;
+    }
+    .footer-container .navlinks {
+        /* outline: 1px solid wheat; */
+        text-align: center;
+    }
+    .footer-container .navlinks > ul:nth-child(2) {
+        /* outline: 1px solid salmon; */
+        margin-top: -1.1em;
+    }
+    .footer-container .navlinks ul li a {
+        font-size: 0.8em;
+    }
+    .footer-container .copyright a {
+        /* outline: 1px solid skyblue; */
+        display: block;
+        margin: 1em auto 0;
+        padding: 1em 1.5em;
+        font-size: 0.8em;
+        text-align: center;
+        max-width: 60%;
+    }
+    
+    .footer-container .copyright p {
+        font-size: 1em;
+        text-align: center;
+    }
+    /* 
+        SMALL CHANGES TO SCREENS WITHIN 361PX - 600PX
+    */
+    @media (min-width: 361px) and (max-width: 600px){
+        /* 
+        ====================================================================================
+                    BANNER SECTION
+        ====================================================================================
+        */
+        .banner-right {
+            /* outline: 1px solid saddlebrown; */
+            overflow: hidden;
+            order: 0;
+            z-index: 2;
+        }
+    
+        .banner-right img {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+            position: relative;
+            top: -8.3em;
+            z-index: 3;
+        }
+    
+        .banner-right::after {
+            content: url("../images/easybank/bg-intro-desktop.svg");
+            /* outline: 1px solid salmon; */
+            position: relative;
+            left: -20em;
+            top: -60.5em;
+            z-index: 1;
+            /* display: none; */
+            /* overflow: hidden; */
+        }
+        .banner-left::after {
+            content: url("../images/easybank/bg-intro-desktop.svg");
+            position: relative;
+            left: 21em;
+            top: -39em;
+            /* z-index: 1; */
+            /* overflow: hidden; */
+            display: none;
+        }
+        .banner-left {
+            /* outline: 1px solid salmon; */
+            width: 90%;
+            margin-top: -64em;
+            margin-left: auto;
+            margin-right: auto;
+            /* outline: 1px solid salmon; */
+            padding-top: 0em;
+            order: 1;
+            max-height: 50vh;
+        }
+        .banner-left a {
+            /* outline: 1px solid salmon; */
+            display: block;
+            max-width: 40vw;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        /* 
+        ====================================================================================
+                FEATURES SECTION
+        ====================================================================================
+        */
+        .choose {
+            margin-top: -43em;
+        }
+        /* 
+        ====================================================================================
+                    FOOTER SECTION
+        ====================================================================================
+        */
+        .footer-container .social ul {
+            display: block;
+            margin-top: 1.5em;
+            /* outline: 1px solid snow; */
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 25%;
+        }
+    }
+}
+  
+
+
+
+
+
+
+
+/*                                                                          \*
+            ===================================================
+                    MAX WIDTH: 601-824PX(SMARTPHONES =+= MID-TABLET)
+            ===================================================
+\*                                                                          */
+    
+@media (min-width: 601px) and (max-width: 824px) {
+    body {
+        /* background-color: red; */
+        width: 100%;
+        overflow-x: hidden;
+    }
+    /* 
+    ====================================================================================
+                TOP-NAVBAR SECTION
+    ====================================================================================
+    */
+
+    .top-navbar {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10% 70% 20%;
+        padding-top: 1.5em;
+        position: relative;
+        z-index: 10;
+        /* background-color: #fff; */
+    }
+
+    .top-navbar ul {
+        /* outline: 1px solid gold; */
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -0em;
+    }
+
+    .top-navbar ul li {
+        margin-left: 1em;
+        position: relative;
+        left: 2em;
+    }
+    .invite-btn a {
+        padding: 0.75em 0.6em;
+        position: relative;
+        left: -1em;
+    }
+    /* 
+    ====================================================================================
+                BANNER SECTION
+    ====================================================================================
+    */
+    .banner {
+        /* outline: 1px solid slateblue; */
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        height: auto;
+        overflow-x: hidden;
+    }
+    .banner-right {
+        /* outline: 1px solid saddlebrown; */
+        overflow: hidden;
+        order: 0;
+        z-index: 2;
+    }
+
+    .banner-right img {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        top: -8.3em;
+        z-index: 3;
+    }
+
+    .banner-right::after {
+        content: url("../images/easybank/bg-intro-desktop.svg");
+        /* outline: 1px solid salmon; */
+        position: relative;
+        left: -12em;
+        top: -60.5em;
+        z-index: 1;
+        /* display: none; */
+        /* overflow: hidden; */
+    }
+    .banner-left::after {
+        content: url("../images/easybank/bg-intro-desktop.svg");
+        position: relative;
+        left: 21em;
+        top: -39em;
+        /* z-index: 1; */
+        /* overflow: hidden; */
+        display: none;
+    }
+    .banner-left {
+        /* outline: 1px solid salmon; */
+        width: 90%;
+        margin-top: -64em;
+        margin-left: auto;
+        margin-right: auto;
+        /* outline: 1px solid salmon; */
+        padding-top: 0em;
+        order: 1;
+        max-height: 50vh;
+    }
+
+    .banner-left h1 {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .banner-left p {
+        text-align: center;
+        font-weight: 200;
+        width: 90%;
+        margin-top: -0.7em;
+        margin-bottom: 2.8em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner-left a {
+        /* outline: 1px solid salmon; */
+        display: block;
+        max-width: 40vw;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    /* 
+    ====================================================================================
+                FEATURES SECTION
+    ====================================================================================
+    */
+
+    .choose {
+        margin-top: -45em;
+        /* outline: 1px solid slateblue; */
+        background-color: var(--lightGrayishBlue);
+    }
+
+    .feature-intro {
+        /* outline: 1px solid gold; */
+        padding-top: 2em;
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .feature-intro h1 {
+        font-weight: 400;
+        font-size: 1.5em;
+    }
+
+    .feature-intro p {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3em;
+        font-weight: 300;
+    }
+
+    .features {
+        column-gap: 0.7em;
+        row-gap: 1em;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 3em;
+    }
+
+    .features img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .features h2 {
+        font-weight: 400;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .features p {
+        font-size: 0.9em;
+        font-weight: 400;
+    }
+    /* 
+    ====================================================================================
+                ARTICLE SECTION
+    ====================================================================================
+    */
+
+    .articles-box {
+        /* outline: 1px solid salmon; */
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        /* grid-template-columns: repeat(4, 25%); */
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 1.3em;
+        padding-bottom: 4.5em;
+    }
+    @media (min-width: 601px) and (max-width: 750px) {
+        .articles-box {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    /* 
+    ====================================================================================
+                FOOTER SECTION
+    ====================================================================================
+    */
+    .footer-container .social ul {
+        margin-top: 1.5em;
+        /* outline: 1px solid snow; */
+        margin-left: 0;
+    }
+    
+    .footer-container .social ul li {
+        display: inline-block;
+        /* margin-right: 0.3em; */
+        margin-right: 0.1em;
+    }
+    .footer-container .social ul li:nth-child(1) {
+        /* outline: 1px solid salmon; */
+        margin-left: -2em;
+    }
+
+    .footer-container .copyright a {
+        margin: 0em auto 0;
+        font-size: 0.5em;
+        text-align: center;
+        max-width: 70%;
+    }
+    
+    .footer-container .copyright p {
+        font-size: 0.6em;
+        text-align: center;
+    }
+    /* 
+        TWEAKS MADE TO NAVLINKS
+    */
+    @media (min-width: 601px) and (max-width: 756px) {
+        .footer-container {
+            width: 90%;
+        }
+        
+        .footer-container .navlinks ul {
+            display: inline-block;
+            /* outline: 1px solid gold; */
+            margin-right: 1em;
+            margin-top: -0em;
+        }
+        
+        .footer-container .navlinks ul li {
+            margin-bottom: 0.6em;
+        }
+        
+        .footer-container .navlinks ul li a {
+            color: var(--white);
+            font-size: 0.7em;
+        }
+        
+        .footer-container .navlinks ul li a:hover {
+            color: var(--limeGreen);
+        }
+    }
+}
+
+
+
+
+
+/*                                                                                  *\
+            ===================================================================
+                    MAX WIDTH: 825-1100PX( MID-TABLET =+= SMALL DESKTOP PC)
+            ===================================================================
+\*                                                                                  */
+@media (min-width: 825px) and (max-width: 1100px) {
+    body {
+        background-color: pink;
+    }
+    /* 
+    ====================================================
+                TOP-NAVBAR SECTION
+    ====================================================
+    */
+
+    .top-navbar {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 10% 70% 20%;
+        padding-top: 1.5em;
+        position: relative;
+        z-index: 10;
+        /* background-color: #fff; */
+    }
+
+    .top-navbar ul {
+        /* outline: 1px solid gold; */
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -0em;
+    }
+
+    .top-navbar ul li {
+        margin-left: 1em;
+        position: relative;
+        left: 2em;
+    }
+    .invite-btn a {
+        padding: 0.75em 0.6em;
+        position: relative;
+        left: 2em;
+    }
+
+    /* 
+    =============================================
+                BANNER SECTION
+    =============================================
+    */
+
+    .banner {
+        /* outline: 1px solid slateblue; */
+        display: grid;
+        grid-template-columns: 50% 50%;
+        background-color: var(--veryLightGray);
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    .banner-left {
+        margin-left: 20%;
+        /* outline: 1px solid salmon; */
+        padding-top: 4em;
+    }
+
+    .banner-right {
+        overflow: hidden;
+    }
+
+    .banner-right img {
+        display: block;
+        width: 105%;
+        position: relative;
+        top: -3em;
+    }
+
+    .banner-left::after {
+        content: url("../images/easybank/bg-intro-desktop.svg");
+        position: relative;
+        left: 16em;
+        top: -49em;
+    }
+
+
+    /* 
+    ====================================================================================
+                FEATURES SECTION
+    ====================================================================================
+    */
+
+    .choose {
+        margin-top: -54em;
+    }
+
+    /* 
+    ====================================================================================
+                FOOTER SECTION
+    ====================================================================================
+    */
+    .footer-container .copyright a {
+        padding: 1em 1.5em;
+        margin: 0em auto 0;
+        font-size: 0.7em;
+        text-align: center;
+        max-width: 80%;
+    }
+    
+    .footer-container .copyright p {
+        font-size: 0.8em;
+        text-align: right;
+    }
+
+}
+
+/*                                                                                          \*
+            ========================================================================
+                    MAX WIDTH: 1101PX-6000PX(MID DESKTOP SCREEN =+= MAX SCREEN)
+            ========================================================================
+\*                                                                                          */
+@media (min-width: 1101px) and (max-width: 6000px) {
+    body {
+        background-color: yellow;
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* 
+    ====================================================
+                TOP-NAVBAR SECTION
+    ====================================================
+    */
+    
+    .top-navbar ul {
+        width: 80%;
+    }
+
+    /* 
+    =============================================
+                BANNER SECTION
+    =============================================
+    */
+    .banner {
+        height: auto;
+    }
+
+    /* 
+    ====================================================================================
+                FEATURES SECTION
+    ====================================================================================
+    */
+
+    .choose {
+        margin-top: -48em;
+    }
+    /* 
+    ====================================================================================
+                FOOTER SECTION
+    ====================================================================================
+    */
+    .footer-container .copyright a {
+        padding: 1em 1.5em;
+        margin: 0em auto 0;
+        font-size: 0.7em;
+        text-align: center;
+        width: 70%;
+    }
+    
+    .footer-container .copyright p {
+        font-size: 0.8em;
+        text-align: right;
+    }
+}

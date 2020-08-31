@@ -1,0 +1,554 @@
+/*  =========================================================================================  *\
+    MEDIA QUERIES
+\*  =========================================================================================  */
+
+
+
+
+
+/*                                                                          \*
+            ===================================================
+                    MAX WIDTH: 780PX(SMALL SCREENS)
+            ===================================================
+\*                                                                          */
+@media (max-width:780px) {
+    html {
+        overflow-x: hidden;
+        /* background-color: tomato; */
+    }
+    body {
+        /* background-color: olivedrab; */
+        width: 100%;
+        overflow-x: hidden;
+    }
+    /* 
+    ========================================
+            TOP NAVIGATION SECTION
+    ========================================
+    */
+    .top-navbar {
+        display: none;
+    }
+    /* 
+    ====================================
+                HEADER SECTION
+    ====================================
+    */
+
+    .main {
+        /* outline: 1px solid slateblue; */
+        width: 90%;
+        margin-top: 0em;
+        margin-right: auto;
+        margin-left: auto;
+        display: grid;
+        grid-template-columns: 100%;
+        /* overflow: hidden; */
+    }
+    .main-left {
+        grid-row: 2/3;
+    }
+    .main-right {
+        grid-row: 1/2;
+    }
+
+    .main-left h1 {
+        font-size: 1.6em;
+        margin-top: 1.7em;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .main-left p {
+        width: 82%;
+        text-align: center;
+        margin: 0 auto 2em;
+    }
+    .main-left .cta-btn {
+        display: flex;
+        justify-content: center;    
+    }
+    .main-left a {
+        margin-right: 1em;
+    }
+    .main-right img {
+        display: block;
+        width: 100%;
+    }
+
+    .main-right::after {
+        top: 4.2rem;
+        left: 4rem;
+        border-bottom-left-radius: 80%;
+        border-top-left-radius: 80%;
+        height: 80%;
+        width: 105%;
+        overflow: hidden;
+        z-index: -10;
+    }
+
+
+    /* 
+    ===========================================
+                FEATURE_INTRO SECTION
+    ===========================================
+    */
+
+    .feature-intro {
+        /* outline: 1px solid slateblue; */
+        width: 80%;
+    }
+
+    .feature-intro p {
+        font-size: 0.85em;
+        margin-top: -0.5em;
+        margin-bottom: 4em;
+    }
+
+    /* 
+    =======================================
+                MAIN FEATURE SECTION
+    =======================================
+    */
+
+    .main-feature h4 {
+        letter-spacing: 0.05em;
+        margin-bottom: 2.5em;
+        display: none;
+    }
+
+    /* 
+    ==========================================
+                SIMPLE FEATURE SECTION
+    ==========================================
+    */
+
+    .simple {
+        /* outline: 1px solid slateblue; */
+        display: grid;
+        grid-template-columns: 100%;
+        overflow: hidden;
+    }
+
+    .simple-right {
+        /* outline: 1px solid saddlebrown; */
+        padding: 0;
+    }
+
+    .simple-right h3 {
+        font-size: 1.3em;
+        margin: 3em auto 0;
+        text-align: center;
+    }
+
+    .simple-right p {
+        font-size: 0.85em;
+        width: 80%;
+        text-align: center;
+        margin: 1em auto 2em;
+    }
+
+    .info-btn {
+        display: none;
+    }
+
+
+    .simple-left img {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .simple-left::after {
+        content: '';
+        position: absolute;
+        top: 2rem;
+        right: 6rem;
+    }
+
+    /* 
+    ===========================================
+                SPEEDY FEATURE SECTION
+    ===========================================
+    */
+    .speed {
+        margin-top: 0em;
+    }
+
+    .speedy {
+        /* outline: 1px solid slateblue; */
+        display: grid;
+        grid-template-columns: 100%;
+        overflow: hidden;
+        margin-top: 3em;
+    }
+
+    .speedy-left {
+        padding: 0;
+        grid-row: 2/3;
+    }
+
+    .speedy-left h3 {
+        font-size: 1.3em;
+        margin: 2em auto 0;
+        text-align: center;
+    }
+
+    .speedy-left p {
+        font-size: 0.85em;
+        width: 80%;
+        text-align: center;
+        margin: 1em auto 2em;
+    }
+
+    .speedy-right img{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .speedy-right::after {
+        top: 3rem;
+        left: 3rem;
+        border-bottom-left-radius: 30%;
+        border-top-left-radius: 30%;
+    }
+    /* 
+    =========================================
+                SHARING FEATURE SECTION
+    =========================================
+    */
+    .sharing {
+        /* outline: 1px solid slateblue; */
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: 3em;
+    }
+
+    .sharing-right {
+        padding: 0%;
+    }
+
+    .sharing-right h3 {
+        font-size: 1.3em;
+        margin: 2.5em auto 0;
+        text-align: center;
+    }
+
+    .sharing-right p {
+        font-size: 0.85em;
+        width: 80%;
+        text-align: center;
+        margin: 1em auto 2em;
+    }
+
+    .sharing-left img {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .sharing-left::after {
+        top: 3rem;
+        right: 4rem;     
+        border-bottom-right-radius: 30%;
+        border-top-right-radius: 30%;
+        height: 90%;
+        width: 100%;
+    }
+
+    /* 
+    ======================================
+                DOWNLOAD SECTION
+    ======================================
+    */
+
+    .download {
+        margin-top: 6em;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .download h1 {
+        color: var(--veryDarkBlue);
+        text-align: center;
+    }
+
+    .download p {
+        width: 100%;
+        margin: -0.8em auto 0;
+    }
+
+    .browsers {
+        /* outline: 1px solid green; */
+        margin: 3em auto 0 auto;
+        width: 80%;
+        grid-template-columns: 100%;
+        row-gap: 1em;
+    }
+    .browser-item img.dots {
+        width: 100%;
+    }
+    .browser-item a {
+        /* outline: 1px solid saddlebrown; */
+        font-size: 0.8em;
+        display: block;
+        text-align: center;
+    }
+
+
+    /* 
+    =========================================
+                JOIN US SECTION
+    =========================================
+    */
+    .join {
+        margin-top: 11em;
+    }
+
+
+    .join h2 {
+        width: 85%;
+    }
+    form {
+        padding-bottom: 3em;   
+    }
+    form input {
+        display: block;
+        width: 80%;
+        margin: 0 auto 1.5em;
+        padding-left: 1em;
+    }
+    form button {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        padding: 1em 0.5em;
+    }
+
+
+    /* 
+    ======================================
+                FOOTER SECTION
+    ======================================
+    */
+    .footer-navigation {
+        text-align: center;
+        width: 80%;
+        flex-direction: column;
+        padding-bottom: 1em;
+    }
+    .footer-logo {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 2em;
+    }
+    
+    .footer-navlinks {
+        width: 100%;
+    }
+    .footer-navlinks ul {
+        margin-left: 0em;
+    }
+    .footer-navlinks ul li {
+        display: block;
+        margin-bottom: 0.5em;
+    }
+    .footer-social {
+        width: 100%;
+    }
+    
+    .footer-social li {
+        display: inline-block;
+        position: static;
+    }
+}
+
+/*                                                                                  \*
+            =============================================================
+                MIN WIDTH: 781PX == MAX-WIDTH: 960PX(MEDIUM  SCREENS)
+            =============================================================
+\*                                                                                  */
+@media (min-width: 781px) and (max-width: 960px) {
+    html {
+        overflow-x: hidden;
+        /* background-color: orangered; */
+    }
+    body {
+        /* background-color: olive; */
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .mobile-nav {
+        display: none;
+    }
+
+    /* 
+    ========================================
+            TOP NAVIGATION SECTION
+    ========================================
+    */
+    .top-navbar {
+        margin-top: 0em;
+        width: 85%;
+    }
+    .top-navbar ul li {
+        margin-left: 2em;
+    }
+
+    /* 
+    =========================================
+                SIMPLE FEATURE SECTION
+    =========================================
+    */
+    
+    .simple-left img {
+        display: block;
+        margin-left: auto;
+        width: 100%;
+    }
+
+    .simple-left::after {
+        top: 2rem;
+        right: 6rem;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+
+    /* 
+    ============================================
+                SPEEDY FEATURE SECTION
+    ============================================
+    */
+    .speed {
+        margin-top: 6em;
+    }
+
+
+
+    /* 
+    ======================================
+                DOWNLOAD SECTION
+    ======================================
+    */
+    .download {
+        width: 70%;
+    }
+    .browsers {
+        margin: 3em auto 0;
+        width: 100%;
+    }
+    .browser-item img.dots {
+        width: 100%;
+    }
+    .browser-item a {
+        /* outline: 1px solid saddlebrown; */
+        font-size: 0.8em;
+        display: block;
+        text-align: center;
+    }
+
+
+    /* 
+    ====================================
+                JOIN US SECTION
+    ====================================
+    */
+
+    .join h2 {
+        width: 100%;
+    }
+
+    form input {
+        width: 27%;
+    }
+    
+
+    /* 
+    ===================================
+                FOOTER SECTION
+    ===================================
+    */
+    .footer-navigation {
+        width: 90%;
+    }
+    .footer-navlinks ul {
+        /* outline: 1px solid green; */
+        margin-left: 3em;
+    }
+    .footer-social li {
+        display: inline;
+        margin-right: 0.8em;
+        /* outline: 1px solid lightpink; */
+        position: static;
+        left: 4.8em;
+    }
+}
+
+
+
+
+/*                                                                                  \*
+            =============================================================
+                MIN WIDTH: 961PX == MAX-WIDTH: 1460PX(LARGE  SCREENS)
+            =============================================================
+\*                                                                                  */
+
+@media (min-width: 961px) and (max-width: 1460px) {
+    html {
+        overflow-x: hidden;
+        /* background-color: orangered; */
+    }
+    body {
+        /* background-color: violet; */
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .mobile-nav {
+        display: none;
+    }
+    /* 
+    ========================================
+            TOP NAVIGATION SECTION
+    ========================================
+    */
+    .top-navbar {
+        margin-top: 0em;
+    }
+     /* 
+    ======================================
+                DOWNLOAD SECTION
+    ======================================
+    */
+    .download {
+        width: 90%;
+    }
+    .browser-item img.dots {
+        width: 100%;
+    }
+    .browser-item a {
+        /* outline: 1px solid saddlebrown; */
+        font-size: 0.8em;
+        display: block;
+        text-align: center;
+    }
+}
+
+/*                                                                                          \*
+            ===================================================================
+                MIN WIDTH: 1461PX == MAX-WIDTH: 6000PX (EXTRA-LARGE  SCREENS)
+            ===================================================================
+\*                                                                                         */
+
+@media (min-width: 1461px) and (max-width: 6000px) {
+    body {
+        max-width: 1461px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-x: hidden;
+    }
+    .mobile-nav {
+        display: none;
+    }
+}

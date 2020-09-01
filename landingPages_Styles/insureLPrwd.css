@@ -3,29 +3,389 @@
 \*  =========================================================================================  */
 
 
+/*                                                                          \*
+            ===================================================
+                    MAX WIDTH: 780PX(SMALL SCREENS)
+            ===================================================
+\*                                                                          */
+@media (max-width: 780px){
+    html {
+        overflow-x: hidden;
+        /* background-color: orangered; */
+    }
+    body {
+        /* background-color: green; */
+        width: 100%;
+        overflow-x: hidden;
+    }
+    /*=======================================
+        Style for the navbar 
+     ======================================== */
+    .navbar1 {
+        display: none;
+    }
+    
+    /*=======================================
+        Style for the header banner 
+     ======================================== */
+     .banner {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 100%;
+        padding: 0;
+        height: auto;
+    }
+    .banner-left {
+        grid-row: 2/3;
+    }
+    .banner-right img {
+        display: inline-block;
+        margin-top: 0em;
+        width: 100%;
+    }
+    .banner hr {
+        display: none;
+    }
+    .banner-left h1 {
+        margin-top: 1.5em;
+        font-size: 2.7em;
+        text-align: center;
+        line-height: 1em;
+    }
+    .banner-left p {
+        line-height: 1.6em;
+        width: 80%;
+        margin: -1em auto 1em;
+        text-align: center;
+    }
+    
+    .banner-left a {
+        text-align: center;
+        display: block;
+        width: 50%;
+        margin: 0 auto 5em;
+        letter-spacing: 0.1em;
+        margin-top: 0.8em;
+    }
 
-@media (min-width: 361px) and (max-width: 600px){
+
+    /*=======================================
+        Style for the different section
+     ======================================== */
+     .different {
+        /* outline: 1px solid lightgreen; */
+        margin-top: 9em;
+        width: 100%;
+        z-index: 1;
+    }
+    .different hr {
+        width: 40%;
+        position: static;
+    }
+    .different h1 {
+        font-size: 2.7em;
+        text-align: center;
+    }
+
+    .diff-container {
+        margin-top: 3em;
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: 2em;
+        text-align: center;
+    }
+    .diff-container p {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    /*=======================================
+        Style for the how we work section
+     ======================================== */
+     .find {
+        width: 90%;
+        margin-top: 6em;
+        height: auto;
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+    .find h3 {
+        font-size: 2.5em;
+        color: var(--color5);
+        padding-left: 0em;
+        width: 90%;
+        margin: 1.7em auto 0;
+    }
+    
+    .find a {
+        display: block;
+        width: 60%;
+        padding: 0.5em 1.5em;
+        margin: 2em auto 4em;
+    }
+     
+
+    /*=======================================
+        Style for the footer navbar
+     ======================================== */
+     .navbar2 {
+        grid-template-columns: 100%;
+        padding-top: 5em;
+        text-align: center;
+    }
+    .navbar2 ul {
+        margin: 1.5em auto 0 -0em;
+    }
+    .navbar2 ul li {
+        display: inline-block;
+        text-align: center;
+        margin-right: 0.8em;
+    }
+    .navlinks {
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+    .navlinks ul {
+        display: block;
+        margin-top: 0em;
+        margin-bottom: 2em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+
+
+
+
+/*                                                                                  \*
+            =============================================================
+                MIN WIDTH: 781PX == MAX-WIDTH: 960PX(MEDIUM  SCREENS)
+            =============================================================
+\*                                                                                  */
+@media (min-width: 781px) and (max-width: 960px){
+    html {
+        overflow-x: hidden;
+        /* background-color: orangered; */
+    }
     body {
-        background-color: blue;
+        /* background-color: green; */
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .mobile-nav {
+        display: none;
+    }
+    /*=======================================
+        Style for the navbar
+     ======================================== */
+     .navbar1 {
+        width: 90%;
+        grid-template-columns: 20% 80%;
+    }
+
+
+    /*=======================================
+        Style for the header banner
+     ======================================== */
+     .banner hr {
+        top: 4.7em;
+        right: 7em;
+    }
+     .banner-left h1 {
+        font-size: 2.8em;
+    }
+
+
+    /*=======================================
+        Style for the different section
+     ======================================== */
+     .different {
+        /* outline: 1px solid lightgreen; */
+        margin-top: 12em;
+        width: 85%;
+    }
+    .different hr {
+        border: 1px solid var(--color4);
+        width: 10%;
+        position: relative;
+        top: 1em;
+        right: 18.5em;
+    }
+    .different h1 {
+        font-size: 3em;
+    }
+    
+    .diff-container img {
+        width: 25%;
+    }
+
+
+    /*=======================================
+        Style for the how we work section
+     ======================================== */
+     .find {
+        width: 90%;
+        height: auto;
+        grid-template-columns: 60% 40%;
+    }
+    .find h3 {
+        font-size: 2.7em;
+        color: var(--color5);
+        padding-left: 1em;
+    }
+
+
+
+    /*=======================================
+        Style for the footer navbar
+     ======================================== */
+     .navbar2 ul {
+        margin-top: -0em;
+        margin-left: 8em;
+    }
+    .navlinks {
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+
+/*                                                                                  \*
+            =============================================================
+                MIN WIDTH: 961PX == MAX-WIDTH: 1245PX(LARGE  SCREENS)
+            =============================================================
+\*                                                                                  */
+@media (min-width: 961px) and (max-width: 1245px) {
+    html {
+        overflow-x: hidden;
+        /* background-color: orangered; */
+    }
+    body {
+        /* background-color: green; */
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .mobile-nav {
+        display: none;
+    }
+
+
+    /*=======================================
+        Style for the navbar
+     ======================================== */
+     .navbar1 {
+        grid-template-columns: 30% 70%;
+    }
+
+
+    /*=======================================
+        Style for the header banner
+     ======================================== */
+     .banner {
+         height: 460px;
+     }
+     .banner hr {
+        top: 4.7em;
+        right: 8em;
+    }
+    .banner h1 {
+        font-size: 3em;
+    }
+    .banner-right img {
+        display: inline-block;
+        margin-top: 5em;
+        width: 100%;
+    }
+
+
+    /*=======================================
+        Style for the different section
+     ======================================== */
+     .different {
+        /* outline: 1px solid lightgreen; */
+        margin-top: 9em;
+    }
+    .different hr {
+        right: 22.2em;
+    }
+
+
+    /*=======================================
+        Style for the how we work section
+     ======================================== */
+     .find {
+         height: auto;
+        grid-template-columns: 60% 40%;
+    }
+    .find h3 {
+        font-size: 2.8em;
+    }
+
+
+    /*=======================================
+        Style for the footer navbar
+     ======================================== */
+     .navbar2 ul {
+        margin-top: -0em;
+        margin-left: 10em;
+    }
+    .navbar2 li {
+        margin-left: 0.7em;
+    }
+    .navlinks {
+        text-align: center;
     }
 }
-@media (min-width: 601px) and (max-width: 824px) {
-    body {
-        background-color: red;
+
+
+
+
+
+/*                                                                                  \*
+            ================================================================
+                MIN WIDTH: 1246PX == MAX-WIDTH: 6000PX(EXTRA-LARGE  SCREENS)
+            ================================================================
+\*                                                                                  */
+@media (min-width: 1247px) and (max-width: 6000px) {
+    html {
+        overflow-x: hidden;
     }
-}
-@media (min-width: 825px) and (max-width: 1100px) {
     body {
-        background-color: pink;
+        /* background-color: yellow; */
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
     }
-}
-@media (min-width: 1101px) and (max-width: 1399px) {
-    body {
-        background-color: yellow;
+    .mobile-nav {
+        display: none;
     }
-}
-@media (min-width: 1400px) and (max-width: 3000px) {
-    body {
-        background-color: fuschia;
+
+
+    /*=======================================
+        Style for the navbar
+     ======================================== */
+     .navbar1 {
+        grid-template-columns: 45% 55%;
     }
+
+
+    /*=======================================
+        Style for the footer navbar
+     ======================================== */
+     .navbar2 ul {
+        margin-top: -0em;
+        margin-left: 18em;
+    }
+    
+    .navlinks {
+        text-align: center;
+    }
+
 }

@@ -128,24 +128,7 @@ li {
     display: inline-block;
     margin-top: 5em;
 }
-.bg-intro-right {
-    z-index: 100;
-    display: block;
-    position: relative;
-    top: -51em;
-    left: 11em;
-    right: 2em;
-    height: 72vh;
-    width: 510px;
-}
-.bg-intro-left {
-    display: block;
-    z-index: 100;
-    position: relative;
-    top: -60em;
-    right: 42.5em;
-    height: 50vh;
-}
+
 /* Style for the different section ----------------------------------------------------------------------------------------*/
 
 .different {
@@ -276,6 +259,7 @@ footer hr{
 
 .navlinks {
     width: 80%;
+    margin-top: 2em;
     margin-right: auto;
     margin-left: auto;
     display: grid;
@@ -286,6 +270,7 @@ footer hr{
     display: block;
     margin-top: 2em;
     margin-bottom: 3em;
+    padding-left: 0;
 }
 
 .navlinks li {

@@ -1,7 +1,10 @@
 # Landing Pages Project
 
     This repo contains different recreated landing pages, design gotten from frontendmentor.io
+    
+[see live demo](https://kehindeojapa-dev.github.io/landingpages)
 
+https://kehindeojapa-dev.github.io/landingpages
 
 
 #### List of Landing Pages
